@@ -1,2 +1,33 @@
-# Work samples of past projects
+# Work samples of Paul Hallmann's past projects
 
+## Master's thesis: Transformer-Based Imitation Learning for Robot Object Manipulation
+### Abstract
+&ensp; Despite improving software infrastructure and promising advancements in reinforcement and imitation learning, the challenges in efÏciently automating object manipulation tasks that are simple for humans persist. Thus, in the pursuit of a broadly applicable methodology to reduce the work involved in automating individual processes with robots, I conduct a comprehensive analysis of the capabilities of a state-of-the-art imitation learning method, Action Chunking with Transformers (ACT). This work focuses on ACT due to its notable sample efficiency and success rates in real-world manipulation tasks. Modifications to ACT are also explored, targeting the discovered weaknesses of the model architecture. While most show potential but have inconclusive results, the addition of causal attention to the transformer model, also included in one of the follow-up work’s codebases, though highlighted in the corresponding paper, is very beneficial. The general findings suggest that while ACT offers impressive capabilities in imitated dexterity and its sample efÏciency, it requires highly uniform and precise demonstrations and struggles with longer tasks. Additionally, identifying the best-performing models necessitates extensive effort due to the inconsistency between the weights reaching the lowest training and validation losses and those with the best deployment performance. Consequently, ACT, in its current state, only partially meets the goal of reducing the overall workload for the automation of robot object manipulation, though it is a step in the right direction.
+
+#### Align Push Task Multimodal Dataset:
+I recorded two datasets for this task one with more multimodal data -> heavier randomization and less stringent manipulations in demonstrations, showing multiple solutions for similar block arrangements. The best checkpoint achieved 20% full task success rate:
+Successful rollouts:
+<video controls autoplay>
+  <source src="success_1.mp4" type="video/mp4">
+  <source src="success_3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+Close Call:
+<video controls autoplay>
+  <source src="success_but_barely.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+Failures:
+<video controls autoplay>
+  <source src="failure_1.mp4" type="video/mp4">
+  <source src="failure_2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+## Bachelor's thesis: Continuous Locomotion Planning for an Eight-Legged Robot Using Joystick Control
+### Abstract
+Enabling legged robots to walk across complex terrain like staircases, construction sites or rough terrain is an active field of research with many different challenges. Manually controlling robots is desirable in many scenarios where the AI-control of the system is insufficient to solve the task at hand by itself. It is an option for commercially successful and research-wise highly relevant robot systems such as the Spot series by Boston Dynamics or the ANYmal robot by ANYmal Research. A common method to perform locomotion using legged robots in complex terrain is footstep planning, a hierarchical control archetype. Here, a suitable step sequence is planned that reaches a commanded goal pose and solves the robot control task assuming the foot placements to be fixed. An evident lack of methodology in the literature regarding manual assisted control for search-based systems such as footstep planning was noted. The contribution of this work is a new generalized approach for extending footstep planning based robot systems with joystick control for manual assisted operations in challenging terrain. It enables intuitive, reactive and safe continuous locomotion in soft real-time. The construction of the joystick control for footstep planning based systems with these properties is thoroughly discussed. Challenges lie in integrating collision avoidance with the terrain while considering the limitations of the robots, such as the kinematics and the time constraints for continuous walking. Also addressed is how to limit the creativity of the joystick control, when reinterpreting inputs for more sensible plans of motion. The developed joystick control is evaluated for the Walkerchair, an eight-legged robotic wheelchair, in realistic scenarios in simulation.
+
+![walkerchair walking up stairs part 1](walkerchair_stairs_p1.PNG)
+![walkerchair walking up stairs part 2](walkerchair_stairs_p2.PNG)
