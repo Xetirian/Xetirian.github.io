@@ -2,32 +2,45 @@
 
 ## Master's thesis: Transformer-Based Imitation Learning for Robot Object Manipulation
 ### Abstract
-&ensp; Despite improving software infrastructure and promising advancements in reinforcement and imitation learning, the challenges in efÏciently automating object manipulation tasks that are simple for humans persist. Thus, in the pursuit of a broadly applicable methodology to reduce the work involved in automating individual processes with robots, I conduct a comprehensive analysis of the capabilities of a state-of-the-art imitation learning method, Action Chunking with Transformers (ACT). This work focuses on ACT due to its notable sample efficiency and success rates in real-world manipulation tasks. Modifications to ACT are also explored, targeting the discovered weaknesses of the model architecture. While most show potential but have inconclusive results, the addition of causal attention to the transformer model, also included in one of the follow-up work’s codebases, though highlighted in the corresponding paper, is very beneficial. The general findings suggest that while ACT offers impressive capabilities in imitated dexterity and its sample efÏciency, it requires highly uniform and precise demonstrations and struggles with longer tasks. Additionally, identifying the best-performing models necessitates extensive effort due to the inconsistency between the weights reaching the lowest training and validation losses and those with the best deployment performance. Consequently, ACT, in its current state, only partially meets the goal of reducing the overall workload for the automation of robot object manipulation, though it is a step in the right direction.
+Despite improving software infrastructure and promising advancements in reinforcement and imitation learning, the challenges in efÏciently automating object manipulation tasks that are simple for humans persist. Thus, in the pursuit of a broadly applicable methodology to reduce the work involved in automating individual processes with robots, I conduct a comprehensive analysis of the capabilities of a state-of-the-art imitation learning method, Action Chunking with Transformers (ACT). This work focuses on ACT due to its notable sample efficiency and success rates in real-world manipulation tasks. Modifications to ACT are also explored, targeting the discovered weaknesses of the model architecture. While most show potential but have inconclusive results, the addition of causal attention to the transformer model, also included in one of the follow-up work’s codebases, though highlighted in the corresponding paper, is very beneficial. The general findings suggest that while ACT offers impressive capabilities in imitated dexterity and its sample efÏciency, it requires highly uniform and precise demonstrations and struggles with longer tasks. Additionally, identifying the best-performing models necessitates extensive effort due to the inconsistency between the weights reaching the lowest training and validation losses and those with the best deployment performance. Consequently, ACT, in its current state, only partially meets the goal of reducing the overall workload for the automation of robot object manipulation, though it is a step in the right direction.
 
 #### Align Push Task Multimodal Dataset:
-I recorded two datasets for this task one with more multimodal data -> heavier randomization and less stringent manipulations in demonstrations, showing multiple solutions for similar block arrangements. The best checkpoint achieved 20% full task success rate:
+I recorded two datasets for this task. The first dataset contained more multimodal data -> heavier randomization and less stringent manipulations in demonstrations, showing multiple solutions for similar block arrangements. The best checkpoint achieved 20% full task success rate:
 Successful rollouts:
-<video controls autoplay>
-  <source src="success_1.mp4" type="video/mp4">
-  <source src="success_3.mp4" type="video/mp4">
+<video controls>
+  <source src="align_push_multi_successes.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
+
 Close Call:
-<video controls autoplay>
-  <source src="success_but_barely.mp4" type="video/mp4">
+<video controls>
+  <source src="success_but_barely.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
+
 Failures:
-<video controls autoplay>
-  <source src="failure_1.mp4" type="video/mp4">
-  <source src="failure_2.mp4" type="video/mp4">
+<video controls>
+  <source src="align_push_multi_failures.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
 
----
+#### Align Push Task Mono Dataset:
+The second dataset contained followed a single mode for each occuring situation combined with less initialization randomization. The achieved full task success rate was 50%. The runs are slower than the multi variant:
 
+Successful rollouts:
+<video controls>
+  <source src="align_push_mono_successes_2.mp4" type="video/mp4">
+  <source src="align_push_mono_successes_3.mp4" type="video/mp4">
+  <source src="align_push_mono_successes_5.mp4" type="video/mp4">
+  <source src="align_push_mono_successes_6.mp4" type="video/mp4">
+  <source src="align_push_mono_successes_7.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ---
-
+![paprika grasps](grasps.PNG)
+---
+![block detection](block_detection.PNG)
+![block detection image 2](block_detection_2.PNG)
 ---
 ## Bachelor's thesis: Continuous Locomotion Planning for an Eight-Legged Robot Using Joystick Control
 ### Abstract
