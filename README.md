@@ -24,10 +24,16 @@ Failures:
   Your browser does not support the video tag.
 </video>
 
+---
 
+---
+
+---
 ## Bachelor's thesis: Continuous Locomotion Planning for an Eight-Legged Robot Using Joystick Control
 ### Abstract
 Enabling legged robots to walk across complex terrain like staircases, construction sites or rough terrain is an active field of research with many different challenges. Manually controlling robots is desirable in many scenarios where the AI-control of the system is insufficient to solve the task at hand by itself. It is an option for commercially successful and research-wise highly relevant robot systems such as the Spot series by Boston Dynamics or the ANYmal robot by ANYmal Research. A common method to perform locomotion using legged robots in complex terrain is footstep planning, a hierarchical control archetype. Here, a suitable step sequence is planned that reaches a commanded goal pose and solves the robot control task assuming the foot placements to be fixed. An evident lack of methodology in the literature regarding manual assisted control for search-based systems such as footstep planning was noted. The contribution of this work is a new generalized approach for extending footstep planning based robot systems with joystick control for manual assisted operations in challenging terrain. It enables intuitive, reactive and safe continuous locomotion in soft real-time. The construction of the joystick control for footstep planning based systems with these properties is thoroughly discussed. Challenges lie in integrating collision avoidance with the terrain while considering the limitations of the robots, such as the kinematics and the time constraints for continuous walking. Also addressed is how to limit the creativity of the joystick control, when reinterpreting inputs for more sensible plans of motion. The developed joystick control is evaluated for the Walkerchair, an eight-legged robotic wheelchair, in realistic scenarios in simulation.
 
+Pictured below is the simulated ascension of stairs with the joystick control of this thesis:
 ![walkerchair walking up stairs part 1](walkerchair_stairs_p1.PNG)
 ![walkerchair walking up stairs part 2](walkerchair_stairs_p2.PNG)
+![walkerchair walking up stairs part 2](walkerchair_stairs_p3.PNG)
