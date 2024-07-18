@@ -4,19 +4,19 @@ Despite improving software infrastructure and promising advancements in reinforc
 
 #### Align Push Task Multimodal Dataset:
 I recorded two datasets for this task. The first dataset contained more multimodal data -> heavier randomization and less stringent manipulations in demonstrations, showing multiple solutions for similar block arrangements. The best checkpoint achieved 20% full task success rate:
-Successful rollouts:
+Successful rollout examples:
 <video controls>
   <source src="align_push_multi_successes.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
 
-Close Call:
+A close call:
 <video controls>
   <source src="success_but_barely.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
 
-Failures:
+Failure examples:
 <video controls>
   <source src="align_push_multi_failures.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
@@ -35,8 +35,10 @@ Successful rollouts:
   Your browser does not support the video tag.
 </video>
 ---
+This is a screenshot of my sweet pepper detection and grasp generation project:
 ![paprika grasps](grasps.PNG)
 ---
+These are screenshots of my occlusion robust SL-Block tracking project:
 ![block detection](block_detection.PNG)
 ![block detection image 2](block_detection_2.PNG)
 ---
