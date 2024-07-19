@@ -23,15 +23,15 @@ Failure examples:
 </video>
 
 #### Align Push Task Mono Dataset:
-The second dataset contained followed a single mode for each occuring situation combined with less initialization randomization. The achieved full task success rate was 50%. The runs are slower than the multi variant:
+The second dataset contained followed a single mode for each occuring situation combined with less initialization randomization. The achieved full task success rate was 50%:
 
 Successful rollouts:
 <video controls>
-  <source src="align_push_mono_successes_2.mp4" type="video/mp4">
-  <source src="align_push_mono_successes_3.mp4" type="video/mp4">
-  <source src="align_push_mono_successes_5.mp4" type="video/mp4">
-  <source src="align_push_mono_successes_6.mp4" type="video/mp4">
-  <source src="align_push_mono_successes_7.mp4" type="video/mp4">
+  <source src="align_push_mono_successes_2.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
+  <source src="align_push_mono_successes_3.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
+  <source src="align_push_mono_successes_5.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
+  <source src="align_push_mono_successes_6.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
+  <source src="align_push_mono_successes_7.mp4" type="video/mp4 width=100% height="auto" onclick=playPause()">
   Your browser does not support the video tag.
 </video>
 ---
@@ -39,8 +39,8 @@ This is a screenshot of my sweet pepper detection and grasp generation project:
 ![paprika grasps](grasps.PNG)
 ---
 These are screenshots of my occlusion robust SL-Block tracking project:
-![block detection](block_detection.PNG)
 ![block detection image 2](block_detection_2.PNG)
+![block detection](block_detection.PNG)
 ---
 ## Bachelor's thesis: Continuous Locomotion Planning for an Eight-Legged Robot Using Joystick Control
 ### Abstract
