@@ -50,15 +50,16 @@ Failure examples:
 
 ________
 
-The following screenshot displays generated grasps on filtered point cloud data of detected sweet peppers from my sweet pepper grasp generation project. It builds on the works of Zaenker et al. https://arxiv.org/abs/2303.03048# and Huan et al. https://arxiv.org/abs/2211.00191 :
+The following screenshot displays generated grasps on filtered point cloud data of detected sweet peppers from my sweet pepper grasp generation project. It builds on the works of Zaenker et al. https://arxiv.org/abs/2303.03048# and Huang et al. https://arxiv.org/abs/2211.00191 :
+
 ![paprika grasps](grasps.PNG)
 
 ________
 
 These are screenshots of my multi-marker-, multi-camera-based occlusion robust object tracking project for self-interlocking building blocks used in an automated assembly project at my university called SL-Blocks. They show the coordinate systems tracked on all surfaces of the building blocks, whether visible or not, in the given situation. Occluded coordinate system poses are calculated through optimization over the reprojection errors between visible markers and the known transformations between all coordinate systems:
-<p float="left">
-  <img src="/block_detection_2.png" width="49%" />
-  <img src="/block_detection.png" width="49%" /> 
+<p float="center">
+  <img src="block_detection_2.png" width="49%" />
+  <img src="block_detection.png" width="49%" /> 
 </p>
 ________
 
