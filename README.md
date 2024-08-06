@@ -1,4 +1,4 @@
-This website hosts visual impressions of most of my past robotics projects, listed in inverse chronological order.
+This website hosts descriptions and visual impressions of most of my past robotics projects, listed in inverse chronological order.
 
 ## Master's thesis: Transformer-Based Imitation Learning for Robot Object Manipulation
 ### Abstract
@@ -50,13 +50,17 @@ Failure examples:
 
 ________
 
-The following screenshot displays generated grasps on filtered point cloud data of detected sweet peppers from my sweet pepper grasp generation project. It builds on the works of Zaenker et al. https://arxiv.org/abs/2303.03048# and Huang et al. https://arxiv.org/abs/2211.00191 :
+## Grasp Generation for Peppers in Commercial Greenhouses
+I developed a point cloud to grasp generation extension for a greenhouse crop surveying and mapping robot platform, applying a state-of-the-art machine learning method for a university project.
+The following screenshot displays generated grasps on filtered point cloud data of detected sweet peppers. It builds on the works of Zaenker et al. https://arxiv.org/abs/2303.03048# and Huang et al. https://arxiv.org/abs/2211.00191 :
 
 ![paprika grasps](grasps.PNG)
 
 ________
 
-These are screenshots of my multi-marker-, multi-camera-based occlusion robust object tracking project for self-interlocking building blocks used in an automated assembly project at my university called SL-Blocks. They show the coordinate systems tracked on all surfaces of the building blocks, whether visible or not, in the given situation. Occluded coordinate system poses are calculated through optimization over the reprojection errors between visible markers and the known transformations between all coordinate systems:
+## Multi-View Multi-Marker-based Occlusion Robust Object Pose Estimation and Impedance Control based Insertion for an Assembly Project
+I developed a detect, pick, and insert pipeline for special building blocks employed with a Franka Emika robot. The detection algorithm achieved millimeter-accurate occlusion robust state estimation for the building blocks. Key skills required for the project were computer vision theory, non-linear constrained optimization, and impedance control.
+These are screenshots of the estimation visualization for the project. They show the coordinate systems tracked on all surfaces of the building blocks, whether visible or not, in the given situation. Occluded coordinate system poses are calculated through optimization over the reprojection errors between visible markers and the known transformations between all coordinate systems:
 <p float="center">
   <img src="block_detection_2.png" width="49%" />
   <img src="block_detection.png" width="49%" /> 
