@@ -1,8 +1,25 @@
-This website hosts descriptions and visual impressions of most of my past robotics projects, listed in inverse chronological order.
+This website hosts descriptions and visual impressions of most of my past robotics projects, listed in antichronological order.
+
+## Hand-Tracking-Based Teleoperation
+
+Tech Stack: ROS2, MoveIt 2, Mediapipe, Python, C++, Kalman Filtering
+
+Teleoperation via hand-tracking is a low-barrier input method for collecting high-quality demonstrations for Imitation Learning. By removing the need for specialized haptic hardware, this approach democratizes the recording process for robotic training data. I developed this end-to-end system to explore the intersection of computer vision and real-time robotic control.
+
+* System Architecture: Developed a dual-arm teleoperation pipeline using ROS2 and MoveIt 2, mapping real-time human hand poses to robotic end-effectors.
+* Computer Vision: Utilized Mediapipe for high-frequency hand-tracking via a standard webcam.
+* Signal Processing: Implemented a custom Kalman Filter node to smooth tracking jitter and reject anomalous movement spikes, ensuring fluid and safe robotic trajectories.
+* Integration: Created a custom ROS2 bridge to translate normalized image coordinates into 3D Cartesian workspace goals.
+
+<video controls width="100%" height="auto">
+  <source src="webcam_control.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## Master's thesis: Transformer-Based Imitation Learning for Robot Object Manipulation
 ### Abstract
-Despite improving software infrastructure and promising advancements in reinforcement and imitation learning, the challenges in efÏciently automating object manipulation tasks that are simple for humans persist. Thus, in the pursuit of a broadly applicable methodology to reduce the work involved in automating individual processes with robots, I conduct a comprehensive analysis of the capabilities of a state-of-the-art imitation learning method, Action Chunking with Transformers (ACT). This work focuses on ACT due to its notable sample efficiency and success rates in real-world manipulation tasks. Modifications to ACT are also explored, targeting the discovered weaknesses of the model architecture. While most show potential but have inconclusive results, the addition of causal attention to the transformer model, also included in one of the follow-up work's codebases, though not highlighted in the corresponding paper, is very beneficial. The general findings suggest that while ACT offers impressive capabilities in imitated dexterity and its sample efficiency, it requires highly uniform and precise demonstrations and struggles with longer tasks. Additionally, identifying the best-performing models necessitates extensive effort due to the inconsistency between the weights reaching the lowest training and validation losses and those with the best deployment performance. Consequently, ACT, in its current state, only partially meets the goal of reducing the overall workload for the automation of robot object manipulation, though it is a step in the right direction.
+Despite improving software infrastructure and promising advancements in reinforcement and imitation learning, the challenges in efficiently automating object manipulation tasks that are simple for humans persist. Thus, in the pursuit of a broadly applicable methodology to reduce the work involved in automating individual processes with robots, I conduct a comprehensive analysis of the capabilities of a state-of-the-art imitation learning method, Action Chunking with Transformers (ACT). This work focuses on ACT due to its notable sample efficiency and success rates in real-world manipulation tasks. Modifications to ACT are also explored, targeting the discovered weaknesses of the model architecture. While most show potential but have inconclusive results, the addition of causal attention to the transformer model, also included in one of the follow-up work's codebases, though not highlighted in the corresponding paper, is very beneficial. The general findings suggest that while ACT offers impressive capabilities in imitated dexterity and its sample efficiency, it requires highly uniform and precise demonstrations and struggles with longer tasks. Additionally, identifying the best-performing models necessitates extensive effort due to the inconsistency between the weights reaching the lowest training and validation losses and those with the best deployment performance. Consequently, ACT, in its current state, only partially meets the goal of reducing the overall workload for the automation of robot object manipulation, though it is a step in the right direction.
 
 Among the experiments I made in this thesis, I iterated on the data collection process. Below are example rollouts from two datasets for the same task, *Align Push*.
 
