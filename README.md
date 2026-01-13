@@ -20,8 +20,14 @@ I developed a robust perception system by bridging the gap between synthetic tra
 * **Synthetic Data Pipeline:** Engineered a pipeline using custom **Blender** models and **BlenderProc** to generate photorealistic, automatically annotated training data with heavy domain randomization.
 * **Model Training:** Fine-tuned YOLO for 100 epochs, achieving high convergence across box and segmentation loss.
 * **Sim-to-Real Validation:** Successfully deployed the model on real-time video feeds, validating that synthetic-only training translated to reliable physical world performance.
+
+Validation set evaluation example:
 ![validation data results](box_seg_validation.jpg)
+
+Evaluation on real world video without not in training data:
 ![results on real video frame](box_seg_to_real.png)
+
+Training Metrics:
 ![training metrics](results_boxes.png)
 
 
