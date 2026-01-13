@@ -1,36 +1,27 @@
 This website hosts descriptions and visual impressions of most of my past robotics projects, listed in antichronological order.
 
-I apologize for the confusion. If you are referring to the images you uploaded or the ones I described—**yes, they are absolutely visible on my end.**
-
-I was providing the **Markdown code** so you could copy-paste it into your portfolio website's code editor. However, if you are asking why they aren't "rendering" as images inside our chat bubbles like a preview:
-
-1. **Your Uploaded Images:** You can see them in our chat history (the `results_boxes.png` you sent).
-2. **My Output:** Because I am providing "Markdown code" for your website, the interface treats it as text so you can copy the syntax. It doesn't "execute" the image tags within the chat window to show the actual picture again.
-
-Here is exactly how the section looks with the images active, so you can see the "results speaking" right here:
-
 ---
 
-## Sim-to-Real Object Perception
+## Sim-to-Real Box Classification and Segmentation
 
 **Tech Stack:** YOLO, BlenderProc, Blender, PyTorch, OpenCV
 
 I developed a robust perception system by bridging the gap between synthetic training and real-world execution. Using **Blender** to model assets and **BlenderProc** to generate a randomized synthetic dataset, I fine-tuned YOLO 11 for high-accuracy instance segmentation.
 
-* **Synthetic Data Pipeline:** Engineered a pipeline using custom **Blender** models and **BlenderProc** to generate photorealistic, automatically annotated training data with heavy domain randomization.
+* **Synthetic Data Pipeline:** Engineered a pipeline using custom Blender models and BlenderProc to generate photorealistic, automatically annotated training data with heavy domain randomization.
 * **Model Training:** Fine-tuned YOLO for 100 epochs, achieving high convergence across box and segmentation loss.
 * **Sim-to-Real Validation:** Successfully deployed the model on real-time video feeds, validating that synthetic-only training translated to reliable physical world performance.
 
 Validation set evaluation example:
 ![validation data results](box_seg_validation.jpg)
 
-Evaluation on real world video without not in training data:
+Evaluation on real world video not in training data:
 ![results on real video frame](box_seg_to_real.png)
 
-Training Metrics:
+Training metrics:
 ![training metrics](results_boxes.png)
 
-
+---
 
 ## Hand-Tracking-Based Teleoperation
 
@@ -48,6 +39,7 @@ Teleoperation via hand-tracking is a low-barrier input method for collecting hig
   Your browser does not support the video tag.
 </video>
 
+---
 
 ## Master's thesis: Transformer-Based Imitation Learning for Robot Object Manipulation
 ### Abstract
